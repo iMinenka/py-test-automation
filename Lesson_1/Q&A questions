@@ -1,0 +1,21 @@
+1. What data types are mutable and immutable in Python?
+    Mutable: Lists, Sets, Dictionaries
+    Immutable: Numbers, Strings, Tuples, Frozen Sets
+
+2. What control flow statements exists in Python?
+    if elif else - decision making
+    for - repetition
+    while - loop
+    break, continue, pass
+
+3. What are the operators for exception handling in Python?
+    try - except
+    else / finally
+    raise
+
+4. What kind of errors we could expect in HW1.task2 when casting to int() type?
+    ValueError
+    TypeError
+
+5. How many times your program from HW1.task3 read whole text from start to an end?
+    len(text) - 1011 times
