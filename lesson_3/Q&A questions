@@ -1,0 +1,24 @@
+1. What is an iterator? What magic methods are mandatory for custom iterator class?
+__iter__()
+__next__()
+2. What is the difference between generator and iterator?
+yield
+3. What libraries can be used to generate documentation for a project?
+docstring
+Sphinx
+pdoc
+pydoc
+4. What is the difference between os.path and sys.path?
+os.path - manipulate paths
+sys.path - all path PY looking for packages
+5. For what purposes we use if __name__ == "__main__" construction?
+Code runs only when started from command line (not import)
+6. What libraries for test data generation exists in Python?
+faker
+testdata
+7. What static code analyzers exists in Python?
+flake8
+pylint
+8. What are the libraries to parse HTML?
+html.parser
+BeautifulSoup
