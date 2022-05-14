@@ -12,10 +12,9 @@ integers = []
 for i in numbers:
     try:
         integers.append(int(i))
-    except Exception as e:                   # skip "i" if not integerable
+    except Exception:                   # skip "i" if not integerable :)
         continue
 
 print(integers)
 print("Min:", min(integers))
 print("Max:", max(integers))
-
