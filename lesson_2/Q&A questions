@@ -1,0 +1,41 @@
+1. What are the functions in "re" module?
+    compile(pattern, flags=0)        - compile pattern into object
+    search(pattern, string, flags=0) - looking for the first match in text
+    match(pattern, string, flags=0)  - string match to pattern
+    fullmatch(pattern, string, flags=0) - string fully match the pattern
+    findall(pattern, string, flags=0) - return a list of all matched strings
+    sub(pattern, repl, string, count=0, flags=0) - replace pattern by repl
+
+2. How to open file in specific encoding?
+     open(file, mode='r', buffering=- 1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+        example, open(file, encoding='UTF-8')
+
+3. What are the ways to get current date&time in UTC?
+    1) datetime.datetime.utcnow()
+          datetime.datetime(2022, 4, 17, 13, 58, 36, 142804)
+    2) datetime.datetime.now(datetime.timezone.utc)
+          datetime.datetime(2022, 4, 17, 14, 3, 6, 701507, tzinfo=datetime.timezone.utc)
+
+4. How can we get random value from the list?
+    # random.randint(1, 10) - hmm, looks like not from a list..
+    random.choice(lst)
+    random.choices(lst, k=1)
+    random.sample(lst, k=1)
+
+5. What are the main functions in "os" module?
+    chdir(path)
+    getcwd()
+    listdir(path='.')
+    mkdir(path, mode=511, *, dir_fd=None)
+    remove(path, *, dir_fd=None)
+    removedirs(name)
+    rename(src, dst, *, src_dir_fd=None, dst_dir_fd=None)
+    replace(src, dst, *, src_dir_fd=None, dst_dir_fd=None)
+    rmdir(path, *, dir_fd=None)
+    stat(path, *, dir_fd=None, follow_symlinks=True)
+    truncate(path, length)
+    walk(top, topdown=True, onerror=None, followlinks=False)
+
+6. What are the differences between json.load vs json.loads and json.dump vs json.dumps?
+    load and dump - not supposed to work with data as a string, but only to save somewhere
+    loads and dumps - supposed to work with data as a string, ex. parsing, printing..
