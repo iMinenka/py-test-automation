@@ -1,0 +1,6 @@
+COMPANY1 = 'fruits_company'
+COMPANY_NAME1 = 'Fruits'
+COMPANY_ADDRESS1 = 'Ocean street, 1'
+ENGINEER_NAME1 = 'Alex'
+ENGINEER_AGE = 56
+OTHER_COMPANY_NAME = 'Coca-Cola'
